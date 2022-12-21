@@ -1,0 +1,102 @@
+:root {
+  --headers: 'EB Garamond', sans-serif;
+  --primary-color: #EFCB1D;
+  --secondary-color: #E0593F;
+  --tablet-view: 1032px;
+}
+
+
+/* Resets */
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: clamp(1.09rem, 1.28vw, 1.23rem);
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.375rem, 3.75vw, 4.5rem);
+  font-weight: 800;
+  font-family: var(--headers);
+}
+
+h2 {
+  font-size: clamp(1.675rem, 4vw, 2.8rem);
+  font-weight: 800;
+  font-family: var(--headers);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 1vw, 1.375rem);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utility classes */
+
+.link {
+  border: 3px solid #000;
+  border-radius: 5px;
+  padding: 18px 50px;
+  background-color: var(--primary-color);
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s all ease-in;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.link:hover {
+  background-color: #FFF;
+  color: var(--primary-color);
+}
+
+.hightlight-text {
+  font-weight: 700;
+  color: #E0593F;
+}
+
+
+/* Tablet View */
+
+
+
+/* Mobile View */
+
+@media screen and (max-width: 744px) {
+
+  h1 {
+    font-size: clamp(2.138rem, 2vw, 2.613rem);
+  }
+
+  h2 {
+    font-size: clamp(1.47rem, 5.8vw, 1.65rem);
+  }
+
+  h3 {
+    font-size: clamp(0.9rem, 3.8vw, 1rem);
+  }
+
+  p {
+    font-size: clamp(0.788rem, 3.3vw, 0.963rem);
+  }
+
+  /* Utility classes */
+
+  .link {
+    display: block;
+  }
+
+}
